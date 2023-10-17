@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901832437753",
+    "project_id": "ai-industries-dcf36",
+    "storage_bucket": "ai-industries-dcf36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901832437753:android:b02ee8e335e9e844861728",
+        "android_client_info": {
+          "package_name": "com.example.aiindustries"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBib6x9NZcIMQZGWzV7bhkxBmemO7c8MhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
