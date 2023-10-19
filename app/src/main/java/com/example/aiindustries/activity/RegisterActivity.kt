@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.aiindustries.R
 import com.example.aiindustries.databinding.ActivityRegisterBinding
+import com.example.aiindustries.model.UserModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -42,9 +43,19 @@ class RegisterActivity : AppCompatActivity() {
             .create()
         builder.show()
 
-        val data = hashMapOf<String, Any>()
-        data["name"] = binding.UserName.text.toString()
-        data["number"] = binding.userNumber.text.toString()
+        val preferences = this.getSharedPreferences("user", MODE_PRIVATE)
+        val editor = preferences.edit()
+
+
+        editor.putString("number", binding.userNumber.text.toString())
+        editor.putString("name", binding.UserName.text.toString())
+        editor.apply()
+
+
+
+
+
+        val data = UserModel(userName =  binding.UserName.text.toString(), userPhoneNumber = binding.userNumber.text.toString())
 
         Firebase.firestore.collection("users").document(binding.userNumber.text.toString())
             .set(data).addOnSuccessListener {
