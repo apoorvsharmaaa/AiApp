@@ -70,7 +70,7 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
@@ -83,11 +83,11 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="4dp"
-                android:text="Button"
+                android:text="Add to cart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
